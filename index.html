@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>66406120</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .login {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: right;
+        }
+
+        header {
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            display: none;
+            background-color: white;
+            margin: 25px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        section:target {
+            display: block;
+        }
+
+        #home {
+            display: block;
+        }
+
+        section:target ~ #home {
+            display: none;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+        Username: <input type="text">
+        Password: <input type="password">
+        <button>เข้าสู่ระบบ</button>
+    </div>
+
+    <header>
+        <h1>Header</h1>
+    </header>
+
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About</h2>
+
+        <img src="dddd.jpg" alt="รูปนักศึกษา">
+
+        <p><b>ชื่อเล่น :</b> ตัวตั้ง</p>
+        <p><b>ชื่อ-สกุล :</b> นายพงศ์ตะวัน กอนเชื้อรัตน์</p>
+        <p><b>รหัสนักศึกษา :</b> 66406120</p>
+        <p><b>สาขาวิชา :</b> นวัตกรรมธุรกิจดิจิทัล</p>
+        <p><b>ของที่ชอบกิน :</b> เลย์ ทุเรียน แก้วมังกร ข้าวผัด</p>
+        
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+
+        <table>
+            <tr>
+                <th>ความถนัด</th>
+                <th>ระดับความสามารถ</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>Figma</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>50%</td>
+            </tr>
+            <tr>
+                <td>การใช้คอมพิวเตอร์</td>
+                <td>90%</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            
+            <b>เบอร์โทร:</b> 096-363-4895
+        </p>
+        <p>
+            Facebook:
+            <a href="https://www.facebook.com/PTW.KHR">
+                คลิกที่นี่
+            </a>
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:pongtawan.kon@spumail.net">
+                ส่งอีเมล
+            </a>
+        </p>
+    </section>
+
+    <section id="home">
+        <h2>หน้าแรก</h2>
+        <p>ยินดีต้อนรับเข้าสู่เว็บไซต์ของฉัน</p>
+
+        <!-- ส่วนของเพลงที่ชอบ -->
+        <h3>🎵 เพลงที่ชอบ</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sliitz3PSHI?si=NpHJSQt70cjLbnC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+</html>
